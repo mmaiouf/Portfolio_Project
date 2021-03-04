@@ -1,0 +1,591 @@
+html 
+{
+    scroll-behavior: smooth;
+}
+  
+
+body
+{
+    background: linear-gradient(#408ec6, #1e2761, #7a2048);
+    height : auto;
+}
+
+
+
+#header_block
+{
+    border : 2px solid #1e2761;
+    height: 80px;
+    background: linear-gradient(to left, #1e2761, #263280);
+    margin : -10px;
+    display : flex;
+    justify-content: space-around;
+    position : fixed;
+    width : 100%;
+    top : 0;
+    z-index: 1;
+}
+
+
+
+#name_header
+{
+    width : 200px;
+    height : 40px;
+    margin-top : 20px;
+    display : flex;
+}
+
+#name_header p
+{
+   color : #f5f0e1;
+   font-family: 'Share Tech Mono', monospace;
+   font-size: 25px;
+   margin : auto;
+   opacity : 0.9;
+}
+
+#name_header p a
+{
+   color : #f5f0e1;
+   text-decoration: none;
+}
+
+#name_header p a:hover
+{
+   opacity : 1;
+   color : #7a2048;
+}
+
+
+
+#nav_block
+{
+    display : flex;
+    width : 500px;
+    height : 80px;
+    justify-content: space-around;
+    margin-left : 600px;
+}
+
+#nav_block p
+{
+    color : #f5f0e1;
+    opacity: 0.6;
+    font-family: 'Pangolin', cursive;
+    font-size: 20px;
+    margin : auto;
+    padding-bottom: 1px;
+}
+
+#nav_block p a
+{
+    text-decoration : none;
+    color : #f5f0e1;
+}
+
+#nav_block p:hover
+{
+    border-bottom : 3px solid;
+    border-image: linear-gradient(90deg, #408ec6, #7a2048) 1;
+    opacity : 1;
+}
+
+
+#section_about
+{
+    display : flex;
+    margin-top : 80px;
+    padding-top : 80px;
+}
+
+
+
+#about
+{
+    width : 1700px;
+    height : 520px;
+    margin : auto;
+    display : flex;
+    justify-content: space-between;
+}
+
+#photo img
+{
+    border-radius: 400px;
+    width : 400px;
+    height : 400px;
+    margin-top : 40px;
+    margin-left : 20px;
+}
+
+#presentation_block
+{
+    width : 750px;
+    height : 310px;
+    margin-top : 100px;
+    margin-right : 120px;
+
+}
+
+#presentation_block h1
+{
+    width : 350px;
+    color : #7a2048;
+    font-family: 'Titillium Web', sans-serif;
+    font-size : 40px;
+    margin-top : -0.1px;
+}
+
+#my_presentation
+{
+    margin-top : -14px;
+}
+
+#my_presentation p
+{
+    font-size : 20px;
+    color : #e6e1d3;
+    opacity: 0.9;
+    font-family: 'Pangolin', cursive;
+    text-align : justify;
+}
+
+#my_presentation .ps_presentation
+{
+    font-size : 15px;
+    font-style : italic;
+}
+
+
+
+
+#social_media_block
+{
+    width: 150px;
+    margin : auto;
+    display : flex;
+    justify-content: space-between;
+}
+
+
+
+#cv
+{
+    border : 1px solid #7a2048;
+    border-radius: 40px;
+    width : 40px;
+    height : 40px;
+    background-color : #7a2048;
+    display : flex;
+    opacity : 0.9;
+}
+
+#cv a
+{
+    text-decoration : none;
+    margin : auto;
+}
+
+#cv:hover
+{
+    opacity : 1;
+}
+
+#cv a p
+{
+    font-size : 20px;
+    margin : auto;
+    color : #f5f0e1;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#github
+{
+    opacity : 0.8;
+}
+
+#github:hover
+{
+    opacity : 1;
+}
+
+
+
+#section_projects
+{
+    height : 550px;
+    margin-top : 50px;
+    padding-top : 80px;
+    scroll-behavior: smooth;
+}
+
+#section_projects h1
+{
+    color : #f5f0e1; 
+    font-family: 'Architects Daughter', cursive;
+    font-size : 50px;
+    text-align : center;
+}
+
+
+
+#solo_projects
+{
+    width : auto;
+    display : flex;
+    justify-content: space-around;
+}
+
+#solo_projects #title_cv
+{
+    color : skyblue;
+    font-family: 'Pangolin', cursive;
+    text-align : center;
+    width : 170px;
+    margin : auto;
+    transition: transform .2s;
+}
+
+#solo_projects #title_tictactoe
+{
+    color : skyblue;
+    font-family: 'Pangolin', cursive;
+    text-align : center;
+    width : 325px;
+    margin : auto;
+    transition: transform .2s;
+}
+
+#solo_projects #title_portfolio
+{
+    color : skyblue;
+    font-family: 'Pangolin', cursive;
+    text-align : center;
+    width : 80px;
+    margin : auto;
+}
+
+#solo_projects #title_cv:hover
+{
+    color : #7a2048;
+
+}
+
+#solo_projects #title_tictactoe:hover
+{
+    color : #7a2048;
+
+}
+
+#solo_projects #title_portfolio:hover
+{
+    color : #7a2048;
+
+}
+
+#solo_projects p
+{
+    text-align : center;
+}
+
+#solo_projects .short_description_project
+{
+    color : #f5f0e1;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#solo_projects .tools_project
+{
+    color : grey;
+    font-style: italic;
+    font-size: 15px;;
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+#solo_projects .project_block
+{
+    border : 1px solid rgb(255, 255, 255, 0.3);
+    width : 350px;
+    height : 370px;
+    transition: transform .2s;
+    padding-top : 20px;
+}
+
+#solo_projects .project_block a
+{
+    text-decoration : none;
+}
+
+#solo_projects .project_block:hover
+{
+    transform: scale(1.1);
+}
+
+#solo_projects .check_code
+{
+    font-style : italic;
+    color : pink;
+}
+
+#solo_projects .check_code:hover
+{
+    text-decoration: underline;
+}
+
+/*
+#section_contact
+{
+    margin-top : 80px;
+    padding-top : 80px;
+}
+
+#section_contact h1
+{
+    text-align : center;
+    color : #f5f0e1; 
+    font-family: 'Architects Daughter', cursive;
+    font-size : 50px;
+}
+
+#section_contact .label_form
+{
+    color : #f5f0e1;
+    font-family: 'Architects Daughter', cursive;
+    font-size : 22px;
+}
+
+#form
+{
+    text-align : center;
+}
+
+#first_name
+{
+    background-color: transparent;
+    color : #f5f0e1;
+    border : 1px solid gainsboro;
+    border-radius : 5px;
+    width : 900px;
+    height : 50px;
+    font-size : 20px;
+    margin-top : -10px;
+    font-family: 'Pangolin', cursive;
+    padding : 8px;
+}
+
+#last_name
+{
+    background-color: transparent;
+    color : #f5f0e1;
+    border : 1px solid gainsboro;
+    border-radius : 5px;
+    width : 900px;
+    height : 50px;
+    font-size : 20px;
+    margin-top : -10px;
+    font-family: 'Pangolin', cursive;
+    padding : 8px;
+}
+
+
+#email
+{
+    background-color: transparent;
+    color : #f5f0e1;
+    border : 1px solid gainsboro;
+    border-radius : 5px;
+    width : 900px;
+    height : 50px;
+    font-size : 20px;
+    margin-top : -10px;
+    font-family: 'Pangolin', cursive;
+    padding : 8px;
+}
+
+textarea
+{
+    background-color: transparent;
+    color : #f5f0e1;
+    border : 1px solid gainsboro;
+    border-radius : 5px;
+    width : 900px;
+    height : 300px;
+    font-size : 20px;
+    margin-top : -10px;
+    font-family: 'Pangolin', cursive;
+    padding : 10px;
+}
+
+#send_button
+{
+    background-color: #408ec6;
+    border: 1px solid #408ec6;
+    border-radius : 5px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Pangolin', cursive;
+    transition-duration: 0.4s;
+    width : 150px;
+    height : 50px;
+}
+
+#send_button:hover
+{
+    background-color : #1e2761;
+    border: 1px solid #1e2761;
+
+}
+
+#thank_you_sent
+{
+    color: #f5f0e1;
+    text-align : center;
+    font-size: 20px;
+    font-family: 'Pangolin', cursive;
+}
+*/
+
+footer
+{
+    margin-top : 100px;
+    text-align : center;
+    color: white;
+    opacity : 0.8;
+    font-size : 12px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* responsive */
+@media screen and (max-width : 1330px)
+{
+
+
+    #about
+    {
+        height : auto;
+        text-align : center;
+        flex-direction : column;
+    }
+
+    #section_about
+    {
+        display : flex;
+        width : auto;
+    }
+
+    #presentation_block h1
+    {
+        margin : auto;
+    }
+
+    #presentation_block
+    {
+        margin : auto;
+    }
+
+    #header_block
+    {
+        width : auto;
+    }
+
+
+
+}
+
+
+@media screen and (max-width : 1300px)
+{
+
+    #header_block
+    {
+        width : 100%;
+    }
+
+    #nav_block
+    {
+        margin : auto;
+    }
+
+}
+
+@media screen and (max-width : 1180px)
+{
+
+    #section_projects
+    {
+        height : auto;
+    }
+
+    #solo_projects
+    {
+        flex-direction : column;
+    }
+
+    .project_block
+    {
+        margin : auto;
+        margin-bottom : 50px;
+    }
+
+} 
+
+@media screen and (max-width : 800px)
+{
+
+
+    #photo img
+    {
+        border-radius: 300px;
+        width : 300px;
+        height : 300px;
+    }
+
+    #presentation_block
+    {
+        width : auto;
+    }
+}
+
+@media screen and (max-width : 720px)
+{
+
+    #name_header p
+    {
+        font-size : 20px;
+    }
+
+
+    #nav_block
+    {
+        margin : auto;
+    }
+
+} 
+
+@media screen and (max-width : 650px)
+{   
+    #my_presentation p
+    {
+        font-size : 18px;
+    }
+
+} 
+
+@media screen and (max-width : 560px)
+{   
+    #name_header p
+    {
+        display : none;
+    }
+
+} 
+
+
+

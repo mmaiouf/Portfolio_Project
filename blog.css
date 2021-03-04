@@ -1,0 +1,157 @@
+body
+{
+    background: linear-gradient(#408ec6, #1e2761, #7a2048);
+    height : 800px;
+}
+
+#header_block
+{
+    border : 2px solid #1e2761;
+    height: 80px;
+    background: linear-gradient(to left, #1e2761, #263280);
+    margin : -10px;
+    display : flex;
+    justify-content: space-around;
+    position : fixed;
+    width : 100%;
+    top : 0;
+    z-index: 1;
+}
+
+
+
+#name_header
+{
+    width : 200px;
+    height : 40px;
+    margin-top : 20px;
+    display : flex;
+}
+
+#name_header p
+{
+   color : #f5f0e1;
+   font-family: 'Share Tech Mono', monospace;
+   font-size: 25px;
+   margin : auto;
+   opacity : 0.9;
+}
+
+#name_header p a
+{
+   color : #f5f0e1;
+   text-decoration: none;
+}
+
+#name_header p a:hover
+{
+   opacity : 1;
+}
+
+
+
+#nav_block
+{
+    display : flex;
+    width : 500px;
+    height : 80px;
+    justify-content: space-around;
+    margin-left : 700px;
+}
+
+#nav_block p
+{
+    color : #f5f0e1;
+    opacity: 0.6;
+    font-family: 'Pangolin', cursive;
+    font-size: 20px;
+    margin : auto;
+}
+
+#nav_block p a
+{
+    text-decoration : none;
+    color : #f5f0e1;
+}
+
+#nav_block p:hover
+{
+    border-bottom : 3px solid;
+    border-image: linear-gradient(90deg, #408ec6, #7a2048) 1;
+    opacity : 1;
+}
+
+h1
+{
+    color : #f5f0e1;
+    margin-top : 150px;
+    text-align : center;
+    font-family: 'Pangolin', cursive;
+    padding-bottom: 690px;
+}
+
+footer
+{
+    margin : auto;
+    text-align : center;
+    color: white;
+    opacity : 0.8;
+    font-size : 12px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* responsive */
+@media screen and (max-width : 1330px)
+{
+
+    #header_block
+    {
+        width : auto;
+    }
+
+}
+
+
+@media screen and (max-width : 1300px)
+{
+
+    #header_block
+    {
+        width : 100%;
+    }
+
+    #nav_block
+    {
+        margin : auto;
+    }
+
+}
+
+@media screen and (max-width : 720px)
+{
+
+    #name_header p
+    {
+        font-size : 20px;
+    }
+
+
+    #nav_block
+    {
+        margin : auto;
+    }
+
+} 
+
+@media screen and (max-width : 560px)
+{   
+    #name_header p
+    {
+        display : none;
+    }
+
+} 
