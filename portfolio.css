@@ -12,7 +12,7 @@ body
 
 
 
-#header_block
+#header-block
 {
     border : 2px solid #1e2761;
     height: 80px;
@@ -26,9 +26,7 @@ body
     z-index: 1;
 }
 
-
-
-#name_header
+.header-block__name
 {
     width : 200px;
     height : 40px;
@@ -36,7 +34,7 @@ body
     display : flex;
 }
 
-#name_header p
+.header-block__name p
 {
    color : #f5f0e1;
    font-family: 'Share Tech Mono', monospace;
@@ -45,13 +43,13 @@ body
    opacity : 0.9;
 }
 
-#name_header p a
+.header-block__name p a
 {
    color : #f5f0e1;
    text-decoration: none;
 }
 
-#name_header p a:hover
+.header-block__name p a:hover
 {
    opacity : 1;
    color : #7a2048;
@@ -59,7 +57,9 @@ body
 
 
 
-#nav_block
+
+
+#nav-block
 {
     display : flex;
     width : 500px;
@@ -68,7 +68,7 @@ body
     margin-left : 600px;
 }
 
-#nav_block p
+#nav-block p
 {
     color : #f5f0e1;
     opacity: 0.6;
@@ -78,13 +78,13 @@ body
     padding-bottom: 1px;
 }
 
-#nav_block p a
+#nav-block p a
 {
     text-decoration : none;
     color : #f5f0e1;
 }
 
-#nav_block p:hover
+#nav-block p:hover
 {
     border-bottom : 3px solid;
     border-image: linear-gradient(90deg, #408ec6, #7a2048) 1;
@@ -92,16 +92,16 @@ body
 }
 
 
-#section_about
+
+
+#section-about
 {
     display : flex;
     margin-top : 80px;
     padding-top : 80px;
 }
 
-
-
-#about
+.about
 {
     width : 1700px;
     height : 520px;
@@ -110,7 +110,7 @@ body
     justify-content: space-between;
 }
 
-#photo img
+.about__photo img
 {
     border-radius: 400px;
     width : 400px;
@@ -119,16 +119,15 @@ body
     margin-left : 20px;
 }
 
-#presentation_block
+.about__presentation-block
 {
     width : 750px;
     height : 310px;
     margin-top : 100px;
     margin-right : 120px;
-
 }
 
-#presentation_block h1
+.about__presentation-block__title
 {
     width : 350px;
     color : #7a2048;
@@ -137,12 +136,12 @@ body
     margin-top : -0.1px;
 }
 
-#my_presentation
+.about__presentation-block__my-presentation
 {
-    margin-top : -14px;
+    margin-top : -16px;
 }
 
-#my_presentation p
+.about__presentation-block__my-presentation p
 {
     font-size : 20px;
     color : #e6e1d3;
@@ -151,16 +150,9 @@ body
     text-align : justify;
 }
 
-#my_presentation .ps_presentation
-{
-    font-size : 15px;
-    font-style : italic;
-}
 
 
-
-
-#social_media_block
+.about__presentation-block__social-media-block
 {
     width: 150px;
     margin : auto;
@@ -170,7 +162,7 @@ body
 
 
 
-#cv
+.about__presentation-block__social-media-block__cv-logo
 {
     border : 1px solid #7a2048;
     border-radius: 40px;
@@ -181,18 +173,18 @@ body
     opacity : 0.9;
 }
 
-#cv a
+.about__presentation-block__social-media-block__cv-logo a
 {
     text-decoration : none;
     margin : auto;
 }
 
-#cv:hover
+.about__presentation-block__social-media-block__cv-logo:hover
 {
     opacity : 1;
 }
 
-#cv a p
+.about__presentation-block__social-media-block__cv-logo a p
 {
     font-size : 20px;
     margin : auto;
@@ -200,19 +192,19 @@ body
     font-family: 'Architects Daughter', cursive;
 }
 
-#github
+.about__presentation-block__social-media-block__github-logo
 {
     opacity : 0.8;
 }
 
-#github:hover
+.about__presentation-block__social-media-block__github-logo:hover
 {
     opacity : 1;
 }
 
 
 
-#section_projects
+#section-projects
 {
     height : 550px;
     margin-top : 50px;
@@ -220,7 +212,7 @@ body
     scroll-behavior: smooth;
 }
 
-#section_projects h1
+#section-projects h1
 {
     color : #f5f0e1; 
     font-family: 'Architects Daughter', cursive;
@@ -230,81 +222,14 @@ body
 
 
 
-#solo_projects
+.solo-grid-projects
 {
     width : auto;
     display : flex;
     justify-content: space-around;
 }
 
-#solo_projects #title_cv
-{
-    color : skyblue;
-    font-family: 'Pangolin', cursive;
-    text-align : center;
-    width : 170px;
-    margin : auto;
-    transition: transform .2s;
-}
-
-#solo_projects #title_tictactoe
-{
-    color : skyblue;
-    font-family: 'Pangolin', cursive;
-    text-align : center;
-    width : 325px;
-    margin : auto;
-    transition: transform .2s;
-}
-
-#solo_projects #title_portfolio
-{
-    color : skyblue;
-    font-family: 'Pangolin', cursive;
-    text-align : center;
-    width : 80px;
-    margin : auto;
-}
-
-#solo_projects #title_cv:hover
-{
-    color : #7a2048;
-
-}
-
-#solo_projects #title_tictactoe:hover
-{
-    color : #7a2048;
-
-}
-
-#solo_projects #title_portfolio:hover
-{
-    color : #7a2048;
-
-}
-
-#solo_projects p
-{
-    text-align : center;
-}
-
-#solo_projects .short_description_project
-{
-    color : #f5f0e1;
-    font-family: 'Architects Daughter', cursive;
-}
-
-#solo_projects .tools_project
-{
-    color : grey;
-    font-style: italic;
-    font-size: 15px;;
-    font-family: 'Architects Daughter', cursive;
-}
-
-
-#solo_projects .project_block
+.solo-grid-projects__project-block
 {
     border : 1px solid rgb(255, 255, 255, 0.3);
     width : 350px;
@@ -313,23 +238,78 @@ body
     padding-top : 20px;
 }
 
-#solo_projects .project_block a
+.solo-grid-projects__project-block__title-block
+{
+    color : skyblue;
+    font-family: 'Pangolin', cursive;
+    text-align : center;
+    margin : auto;
+    transition: transform .2s;
+}
+
+.solo-grid-projects__project-block__title-block:hover
+{
+    color : #7a2048;
+
+}
+
+.width-title-cv-project
+{
+    width : 170px;
+}
+
+.width-title-tictactoe-project
+{
+    width : 325px;
+}
+
+.width-title-portfolio-project
+{
+    width : 80px;
+}
+
+
+
+
+
+.solo-grid-projects__project-block p
+{
+    text-align : center;
+}
+
+.solo-grid-projects__project-block__short-description-project
+{
+    color : #f5f0e1;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.solo-grid-projects__project-block__tools-project
+{
+    color : grey;
+    font-style: italic;
+    font-size: 15px;;
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+
+.solo-grid-projects__project-block a
 {
     text-decoration : none;
 }
 
-#solo_projects .project_block:hover
+.solo-grid-projects__project-block:hover
 {
     transform: scale(1.1);
 }
 
-#solo_projects .check_code
+.solo-grid-projects__project-block__check-code
 {
     font-style : italic;
     color : pink;
 }
 
-#solo_projects .check_code:hover
+.solo-grid-projects__project-block__check-code:hover
 {
     text-decoration: underline;
 }
@@ -465,9 +445,12 @@ footer
 /* responsive */
 @media screen and (max-width : 1330px)
 {
+    #header-block
+    {
+        width : auto;
+    }
 
-
-    #about
+    .about
     {
         height : auto;
         text-align : center;
@@ -480,22 +463,15 @@ footer
         width : auto;
     }
 
-    #presentation_block h1
+    .about__presentation-block
     {
         margin : auto;
     }
 
-    #presentation_block
+    .about__presentation-block__title
     {
         margin : auto;
     }
-
-    #header_block
-    {
-        width : auto;
-    }
-
-
 
 }
 
@@ -503,12 +479,12 @@ footer
 @media screen and (max-width : 1300px)
 {
 
-    #header_block
+    #header-block
     {
         width : 100%;
     }
 
-    #nav_block
+    #nav-block
     {
         margin : auto;
     }
@@ -517,18 +493,17 @@ footer
 
 @media screen and (max-width : 1180px)
 {
-
-    #section_projects
+    #section-projects
     {
         height : auto;
     }
 
-    #solo_projects
+    .solo-grid-projects
     {
         flex-direction : column;
     }
 
-    .project_block
+    .solo-grid-projects__project-block
     {
         margin : auto;
         margin-bottom : 50px;
@@ -538,16 +513,14 @@ footer
 
 @media screen and (max-width : 800px)
 {
-
-
-    #photo img
+    .about__photo img
     {
         border-radius: 300px;
         width : 300px;
         height : 300px;
     }
 
-    #presentation_block
+    .about__presentation-block
     {
         width : auto;
     }
@@ -556,13 +529,13 @@ footer
 @media screen and (max-width : 720px)
 {
 
-    #name_header p
+    #header-block__name p
     {
         font-size : 20px;
     }
 
 
-    #nav_block
+    #nav-block
     {
         margin : auto;
     }
@@ -571,7 +544,7 @@ footer
 
 @media screen and (max-width : 650px)
 {   
-    #my_presentation p
+    .about__presentation-block__my-presentation p
     {
         font-size : 18px;
     }
@@ -580,7 +553,7 @@ footer
 
 @media screen and (max-width : 560px)
 {   
-    #name_header p
+    #header-block__name p
     {
         display : none;
     }

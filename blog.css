@@ -20,7 +20,7 @@ body
 
 
 
-#name_header
+.header-block__name
 {
     width : 200px;
     height : 40px;
@@ -28,7 +28,7 @@ body
     display : flex;
 }
 
-#name_header p
+.header-block__name p
 {
    color : #f5f0e1;
    font-family: 'Share Tech Mono', monospace;
@@ -37,18 +37,16 @@ body
    opacity : 0.9;
 }
 
-#name_header p a
+.header-block__name p a
 {
    color : #f5f0e1;
    text-decoration: none;
 }
 
-#name_header p a:hover
+.header-block__name p a:hover
 {
    opacity : 1;
 }
-
-
 
 #nav_block
 {
@@ -134,7 +132,7 @@ footer
 @media screen and (max-width : 720px)
 {
 
-    #name_header p
+    .header-block__name p
     {
         font-size : 20px;
     }
@@ -149,7 +147,7 @@ footer
 
 @media screen and (max-width : 560px)
 {   
-    #name_header p
+    .header-block__name p
     {
         display : none;
     }

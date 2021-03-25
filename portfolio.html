@@ -17,15 +17,15 @@
 <body>
     <header>
       <div id = "top">
-      <div id = "header_block">
-        <div id = "name_header">
+      <div id = "header-block">
+        <div class = "header-block__name">
           <p> <a href = "#top"> Mouaad Maiouf </a></p>
         </div>
           <nav>
-            <div id = "nav_block">
-              <p class = "about_header"> <a href = "#top"> About</a></p>
-              <p class = "projects_header"><a href = "#section_projects"> Projects</a></p>
-              <p class = "blog_header"><a href = "blog.html"> Blog </a> </p>
+            <div id = "nav-block">
+              <p> <a href = "#top"> About </a> </p>
+              <p> <a href = "#section-projects"> Projects </a> </p>
+              <p> <a href = "blog.html"> Blog </a> </p>
               <!--<p class = "contact_header"><a href = "#section_contact"> Contact</a></p>-->
             </div>
         </nav>
@@ -33,21 +33,21 @@
       </div>
     </header>
     <section>
-      <div id = "section_about">
-        <div id = "about">
-          <div id ="photo">
+      <div id = "section-about">
+        <div class = "about">
+          <div class ="about__photo">
             <p><img src ="images/Photo_Mouaad_MAIOUF.PNG" alt = "Photo_Mouaad_MAIOUF"></p>
           </div>
-          <div id ="presentation_block">
-            <h1>Junior Developer</h1>
-            <div id = "my_presentation">
+          <div class ="about__presentation-block">
+            <h1 class = "about__presentation-block__title">Junior Developer</h1>
+            <div class = "about__presentation-block__my-presentation">
               <p>Hello, welcome to my portfolio ! I'm a young novice developer who has recently taken an interest in programming, and since that day, it has become a real passion ! I am interested in all areas of programming, from web to mobile, including video games, applications or artificial intelligence. </p>
               <p> You can see below all my complete or ongoing projects, built in solo or groups.</p>
-              <div id = "social_media_block">
-                <div id = "cv"> 
+              <div class = "about__presentation-block__social-media-block">
+                <div class = "about__presentation-block__social-media-block__cv-logo"> 
                   <a href = "docs/CV_Mouaad_MAIOUF.pdf" title = "Download my CV" target="_blank"><p>CV</p></a>
                 </div>
-                <div id = "github"> 
+                <div class = "about__presentation-block__social-media-block__github-logo"> 
                   <a href = https://github.com/mmaiouf title = "Check my Github" target="_blank"><img src = "images/github_logo.png" alt = "Logo Github"></a>
                 </div>
               </div>
@@ -57,38 +57,37 @@
       </div>
     </section>
       <section>
-        <div id = "section_projects">
+        <div id = "section-projects">
           <h1>Solo projects</h1>
-          <div id = "solo_projects">
-            <div class = "project_block">
+          <div class = "solo-grid-projects">
+            <div class = "solo-grid-projects__project-block">
               <a href = "docs/CV_Mouaad_MAIOUF.pdf" title = "Check this project">
-                <h2 id = "title_cv">Curriculum Vitae</h2>
+                <h2 class = "solo-grid-projects__project-block__title-block width-title-cv-project">Curriculum Vitae</h2>
                 <p><img src = "images/CV_Mouaad_MAIOUF_image_mini.png" alt = "ScreenShot CV"></p>
-                <p class = "short_description_project">My CV designed by myself</p>
-                <p class = "tools_project"> HTML / CSS</p>
-                <a href = "https://github.com/mmaiouf/CV" target = "_blank"><p class = "check_code">check the code</p></a>
+                <p class = "solo-grid-projects__project-block__short-description-project">My CV designed by myself</p>
+                <p class = "solo-grid-projects__project-block__tools-project"> HTML / CSS</p>
+                <a href = "https://github.com/mmaiouf/CV" target = "_blank"><p class = "solo-grid-projects__project-block__check-code">check the code</p></a>
               </a>
             </div>
-            <div class = "project_block">
+            <div class = "solo-grid-projects__project-block">
               <a href = "images/project_tictactoe.gif" title = "Check this project" target = "_blank">
-                <h2 id = "title_tictactoe">TicTacToe Game (not complete)</h2>
+                <h2 class = "solo-grid-projects__project-block__title-block width-title-tictactoe-project">TicTacToe Game (not complete)</h2>
                 <p><img src = "images/TicTacToe_image_mini.png" alt = "ScreenShot TicTacToe"></p>
-                <p class = "short_description_project">A simple TicTacToe game</p>
-                <p class = "tools_project"> HTML / CSS / Javascript</p>
-                <a href = "https://github.com/mmaiouf/TicTacToeJS-not-complete-" target = "_blank"><p class = "check_code">check the code</p></a>
+                <p class = "solo-grid-projects__project-block__short-description-project">A simple TicTacToe game</p>
+                <p class = "solo-grid-projects__project-block__tools-project"> HTML / CSS / Javascript</p>
+                <a href = "https://github.com/mmaiouf/TicTacToeJS-not-complete-" target = "_blank"><p class = "solo-grid-projects__project-block__check-code">check the code</p></a>
               </a>
             </div>
-            <div class = "project_block">
+            <div class = "solo-grid-projects__project-block">
               <a href = "https://www.mmaiouf.fr" title = "Check this project" target = "_blank">
-                <h2 id = "title_portfolio">Portfolio</h2>
+                <h2 class = "solo-grid-projects__project-block__title-block width-title-portfolio-project">Portfolio</h2>
                 <p><img src = "images/Portfolio_image_mini.png" alt = "ScreenShot CV"></p>
-                <p class = "short_description_project">This portfolio designed by myself</p>
-                <p class = "tools_project"> HTML / CSS</p>
-                <a href = "https://github.com/mmaiouf/Portfolio_Project"><p class = "check_code">check the code</p></a>
+                <p class = "solo-grid-projects__project-block__short-description-project">This portfolio designed by myself</p>
+                <p class = "solo-grid-projects__project-block__tools-project"> HTML / CSS</p>
+                <a href = "https://github.com/mmaiouf/Portfolio_Project"><p class = "solo-grid-projects__project-block__check-code">check the code</p></a>
               </a>
             </div>
           </div>  
-        </div>
         </div>
       </section>
     <!-- 
@@ -128,12 +127,3 @@
     </footer>
 </body>
 </html>
-
-
-
-<!--
-  Les trucs à finaliser : 
-
-  - gérer le php pour que l'envoi de mail fonctionne
-  - gérer les "devlog" avec nouvelles pages pour chaque projet
--->
