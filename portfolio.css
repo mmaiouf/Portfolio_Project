@@ -529,7 +529,7 @@ footer
 @media screen and (max-width : 720px)
 {
 
-    #header-block__name p
+    .header-block__name p
     {
         font-size : 20px;
     }
@@ -553,7 +553,7 @@ footer
 
 @media screen and (max-width : 560px)
 {   
-    #header-block__name p
+    .header-block__name p
     {
         display : none;
     }
