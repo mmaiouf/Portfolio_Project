@@ -204,9 +204,12 @@ body
 
 
 
+
+
 #section-projects
 {
-    height : 550px;
+	width : auto;
+    height : 1200px;
     margin-top : 50px;
     padding-top : 80px;
     scroll-behavior: smooth;
@@ -222,23 +225,26 @@ body
 
 
 
+
+
 .solo-grid-projects
 {
     width : auto;
     display : flex;
+	flex-wrap : wrap;
     justify-content: space-around;
 }
 
-.solo-grid-projects__project-block
+.grid-projects__project-block
 {
     border : 1px solid rgb(255, 255, 255, 0.3);
     width : 350px;
-    height : 370px;
+    height : 380px;
     transition: transform .2s;
     padding-top : 20px;
 }
 
-.solo-grid-projects__project-block__title-block
+.grid-projects__project-block__title-block
 {
     color : skyblue;
     font-family: 'Pangolin', cursive;
@@ -247,43 +253,23 @@ body
     transition: transform .2s;
 }
 
-.solo-grid-projects__project-block__title-block:hover
+.grid-projects__project-block__title-block:hover
 {
     color : #7a2048;
-
 }
 
-.width-title-cv-project
-{
-    width : 170px;
-}
-
-.width-title-tictactoe-project
-{
-    width : 325px;
-}
-
-.width-title-portfolio-project
-{
-    width : 80px;
-}
-
-
-
-
-
-.solo-grid-projects__project-block p
+.grid-projects__project-block p
 {
     text-align : center;
 }
 
-.solo-grid-projects__project-block__short-description-project
+.grid-projects__project-block__short-description-project
 {
     color : #f5f0e1;
     font-family: 'Architects Daughter', cursive;
 }
 
-.solo-grid-projects__project-block__tools-project
+.grid-projects__project-block__tools-project
 {
     color : grey;
     font-style: italic;
@@ -293,28 +279,40 @@ body
 
 
 
-.solo-grid-projects__project-block a
+.grid-projects__project-block a
 {
     text-decoration : none;
 }
 
-.solo-grid-projects__project-block:hover
+.grid-projects__project-block:hover
 {
     transform: scale(1.1);
 }
 
-.solo-grid-projects__project-block__check-code
+.grid-projects__project-block__check-code
 {
     font-style : italic;
     color : pink;
 }
 
-.solo-grid-projects__project-block__check-code:hover
+.grid-projects__project-block__check-code:hover
 {
     text-decoration: underline;
 }
 
-/*
+
+
+.groups-grid-projects
+{
+    width : auto;
+    display : flex;
+	flex-wrap : wrap;
+    justify-content: space-around;
+}
+
+
+
+
 #section_contact
 {
     margin-top : 80px;
@@ -426,7 +424,6 @@ textarea
     font-size: 20px;
     font-family: 'Pangolin', cursive;
 }
-*/
 
 footer
 {
@@ -498,12 +495,12 @@ footer
         height : auto;
     }
 
-    .solo-grid-projects
+    .grid-projects
     {
         flex-direction : column;
     }
 
-    .solo-grid-projects__project-block
+    .grid-projects__project-block
     {
         margin : auto;
         margin-bottom : 50px;
